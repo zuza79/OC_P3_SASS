@@ -1,0 +1,22 @@
+/*Utils :
+     Variables / Fonctions / Mixins / Placeholders.
+Base.
+Composants.
+Layout.
+Pages.
+Thèmes.*/
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./components/map";
+@import "./components/button";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./pages/functioning";
+@import "./pages/homepage";
+@import "./pages/loading";
+@import "./pages/lookresto";
+@import "./pages/resto";
+
+
