@@ -1,0 +1,27 @@
+/*---mixin---*/
+@mixin flex-direction-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin margin-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin border-button{
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+@mixin backgnd-shadow-transition{
+    background: linear-gradient( 175deg, $background-color-secondary 5%, $background-color-primary 95%);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
+    transition: box-shadow 500ms linear, transform 150ms linear;}
+@mixin box-shadow-gray{    
+    box-shadow: 5px 5px 5px 3px $background-color-gray-light;
+}
+@mixin image{
+    width: 100%;
+    object-fit: cover;
+}

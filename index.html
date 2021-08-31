@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,14 @@
 <!--Loading Spinner-->
 <div class="loading">
     <div class="BlocLoading">
-        <img class="ImgLoading" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+        <img class="ImgLoading" src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
         <div class="AnimLoading"></div>
     </div>
 </div>  
 
 <!--Header-->
 <header >
-    <h1>ohmyfood</h1>
+    <img class="logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
 </header>
 <!--Home page-->
 <div class="HomePage">
@@ -33,47 +33,55 @@
     </form>
         <!--Look Resto-->
     <div class="LookResto">
-        <div class="ReserveMenu">
-            <p>Réservez le menu qui</p>
-            <p>vous convient</p>
+        <div class="TxtReserveMenu">
+            <p>Réservez le menu qui </p>
+            <p> vous convient</p>
         </div>
-            <p>Découvrez des restaurants d'exeption</p>
+        <div class="TxtDiscoveryResto">
+            <p>Découvrez des restaurants d'exeption </p>
             <p>séléctionnés par nos soins</p>
+        </div>
     </div>
         <!--Button-->
     <button class="ButtonResto">Explorer nos restaurants</button>
 </div>
 <!--Functioning-->
 <div class="functioning">
-<h3>Fonctionnement</h3>
-
+<h3 class="TitleFonc">Fonctionnement</h3>
+ 
     <div class="FuncMenu">
-        <div class="number">1</div>
-        <div class="select">
-            <i class="fas fa-mobile-alt fa-lg"></i>
-            <div class="TxtFunc">Choisissez un restaurant</div>
+        <div class="SelectMenu SelectMenu1">
+            <div class="number">1</div>
+            <div class="select">
+                <i class="fas fa-mobile-alt fa-lg"></i>
+                <div class="TxtFunc">Choisissez un restaurant</div>
+            </div>
         </div>
 
+        <div class="SelectMenu SelectMenu2">
             <div class="number">2</div>
-        <div class="select">
-            <i class="fas fa-list-ul fa-lg"></i>
-            <div class="TxtFunc">Composez votre menu</div>
+            <div class="select">
+                <i class="fas fa-list-ul fa-lg"></i>
+                <div class="TxtFunc">Composez votre menu</div>
+            </div>
         </div>
 
+        <div class="SelectMenu SelectMenu3">    
             <div class="number">3</div>
-        <div class="select">
-            <i class="fas fa-store fa-lg"></i>
-            <div class="TxtFunc">Dégustez au restaurant</div>
+            <div class="select">
+                <i class="fas fa-store fa-lg"></i>
+                <div class="TxtFunc">Dégustez au restaurant</div>
+            </div>
         </div>
     </div>    
 </div>
 <!--Resto-->
 <div class="resto">
-    <h3>Restaurants</h3>
-    <div class="CardResto">
-        <a href="menu1_la_palette_du_gout.html">
+    <h3 class="TitleResto">Restaurants</h3>
+    <div class="TwoMenusResto">
+    <a class="LinkResto" href="menu1_la_palette_du_gout.html">
+    <article class="CardResto">
         <img class="ImgResto" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette avec la salade">
-        </a>
         <div class="BlocResto">
             <div class="TxtResto">
                 <h4>La palette du goût</h4>
@@ -85,12 +93,12 @@
             </div>
         </div>
         <div class="new">Nouveau</div>
-    </div>
-    
-    <div class="CardResto">
-        <a href="#">
+    </article>
+    </a>
+
+    <a href="#" >
+    <article class="CardResto">
         <img class="ImgResto" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'une assiette avec les olives, pomme de terre, morceaux de la viande et la sauce">
-        </a>
         <div class="BlocResto">
             <div class="TxtResto">
                 <h4>La note enchantée</h4>
@@ -102,12 +110,14 @@
             </div>
         </div>
         <div class="new">Nouveau</div>
+    </article>
+    </a>
     </div>
 
-    <div class="CardResto">
-        <a href="#">
+    <div class="TwoMenusResto">
+    <a href="#">
+    <article class="CardResto">
         <img class="ImgResto" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une assiette avec la salade">
-        </a>
         <div class="BlocResto">
             <div class="TxtResto">
                 <h4>À la française</h4>
@@ -118,12 +128,12 @@
                 <i class="HeartFull fas fa-heart fa-lg"></i>
             </div>
         </div>
-    </div>
-    
-    <div class="CardResto">
-        <a href="#">
+    </article>
+    </a>
+
+    <a href="#">
+    <article class="CardResto">
         <img class="ImgResto" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'une assiette avec la salade">
-        </a>
         <div class="BlocResto">
             <div class="TxtResto">
                 <h4>La délice des sens</h4>
@@ -134,12 +144,15 @@
                 <i class="HeartFull fas fa-heart fa-lg"></i>
             </div>
         </div>
+    </article>
+    </a>
     </div>
 </div>
 
 <!--Footer-->
 <footer>
-    <h2>ohmyfood</h2>
+    <h2 class="FooterTitle">ohmyfood</h2>
+    <div class="FooterBloc">
     <a href="#" class="FooterItem">
         <i class="fas fa-utensils"></i>
         <p class="pFooter">Proposer un restaurant</p>
@@ -154,6 +167,7 @@
     <a href="mailto:contact@ohmyfood.com" class="FooterItem">
         <p class="pFooter">Contact</p>
     </a>
+</div>
 </footer>
 
 </body>

@@ -1,3 +1,481 @@
+@charset "UTF-8";
+/*Utils :
+     Variables / Fonctions / Mixins / Placeholders.
+Base.
+Composants.
+Layout.
+Pages.
+Thèmes.*/
+/*---mixin---*/
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
 
+/*----styles-----*/
+h1 {
+  font-family: shrikhand;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: shrikhand;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  letter-spacing: -0.05em;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: #474f4e;
+}
+
+input {
+  cursor: pointer;
+}
+
+.TxtReserveMenu {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 10px;
+}
+
+/*-----------map*--------------------*/
+.FormMap {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+.FormMap #map {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+}
+.FormMap input::placeholder {
+  color: black;
+  font-weight: 800;
+  font-family: roboto;
+}
+
+#searching {
+  width: 130px;
+  padding: 10px;
+  outline: none;
+}
+
+.InSearching {
+  color: black;
+  border-color: transparent;
+  background-color: #e5e5e5;
+}
+
+input {
+  padding-left: 10px;
+}
+
+/*----Button Resto----*/
+.ButtonResto {
+  width: 215px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 500ms linear, transform 150ms linear;
+}
+.ButtonResto:hover {
+  width: 205px;
+  height: 45px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*----------Footer-----------------*/
+footer {
+  color: white;
+  background-color: #474f4e;
+  padding: 25px;
+}
+
+.FooterItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  padding: 5px;
+  gap: 10px;
+}
+
+.pFooter {
+  letter-spacing: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.fa-utensils, .fa-hands-helping {
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .FooterTitle {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .FooterBloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: ) and (max-width: 800px) {
+  .FooterTitle {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .FooterBloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/*logo*/
+.logo {
+  width: 170px;
+  height: 30px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heart {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  padding: 25px 25px 25px 25px;
+  cursor: pointer;
+}
+
+.HeartNormal {
+  color: black;
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+}
+.HeartNormal:hover {
+  color: transparent;
+  background-color: transparent;
+}
+
+.HeartFull {
+  z-index: 1;
+  color: #FF79DA;
+  cursor: pointer;
+}
+
+/*--------Functioning--------*/
+.functioning {
+  padding: 40px 10px 50px 0px;
+}
+
+.SelectMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.TitleFonc {
+  padding-left: 20px;
+}
+
+.select {
+  width: 300px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding-left: 30px;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+}
+
+.fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover {
+  cursor: pointer;
+  color: #9356DC;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  left: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #9356DC;
+  margin-top: 25px;
+}
+
+.TxtFunc {
+  width: 220px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: 800px) {
+  .select {
+    width: 70%;
+  }
+
+  .TitleFonc {
+    text-align: center;
+  }
+
+  .TxtFunc {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .FuncMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/*------HomePage-------*/
+.HomePage {
+  margin-top: 10px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+  border-top: solid 3px #d6dbdf;
+}
+
+/*loading visibility: hidden;*/
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: #f2f2f2;
+  position: absolute;
+  z-index: 20;
+  animation: LoadingPage 3s ease-in-out normal forwards;
+}
+
+@keyframes LoadingPage {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.BlocLoading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ImgLoading {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AnimLoading {
+  border: 20px solid #9356DC;
+  border-radius: 50%;
+  border-top: 20px solid #FF79DA;
+  border-bottom: 20px solid #99E2D0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+/*-------Look Resto----------*/
+.LookResto {
+  padding: 30px;
+  text-align: center;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: 800px) {
+  .TxtReserveMenu, .TxtDiscoveryResto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*----Resto---------*/
+.resto {
+  padding: 55px 20px 55px 20px;
+  background-color: #f2f2f2;
+}
+
+.LinkResto {
+  color: black;
+}
+
+.CardResto {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.ImgResto {
+  width: 100%;
+  object-fit: cover;
+  height: 175px;
+  border-radius: 25px 25px 0 0;
+}
+
+.BlocResto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+}
+
+.TxtResto {
+  color: black;
+  padding: 10px 10px 10px 19px;
+}
+
+.new {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #99E2D0;
+  color: #278827;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: 800px) {
+  .TwoMenusResto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .TitleResto {
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

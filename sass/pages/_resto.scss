@@ -1,0 +1,57 @@
+/*----Resto---------*/
+.resto{
+    padding: 55px 20px 55px 20px;
+    background-color: $background-color-gray-light;
+}
+.LinkResto{
+    color: black;
+}
+.CardResto{
+    width: 100%;
+    height: 250px;
+    position:relative;
+    border-radius: 25px 25px 25px 25px;
+    @include box-shadow-gray; 
+    @include flex-direction-row-center;
+    flex-direction: column;    
+    margin-bottom: 30px;
+}
+.ImgResto{
+    @include image;
+    height: 175px;
+    border-radius: 25px 25px 0 0;
+}
+.BlocResto{
+    width: 100%;
+    @include flex-direction-row-center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+}
+.TxtResto{
+    color: black;
+    padding: 10px 10px 10px 19px;
+}
+.new{
+    width: 80px;
+    height: 30px;
+    @include flex-direction-row-center;
+    position: absolute;
+    right: 15px;
+    top:15px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: $background-color-tertiary;
+    color: #278827;
+}
+/*--Desktop--*/
+@media screen and (min-width: map-get($breakpoints, desktop))
+{
+   .TwoMenusResto{
+       @include flex-direction-row-center;
+       gap: 30px;
+   } 
+   .TitleResto{
+       text-align: center;
+   }
+}

@@ -1,0 +1,23 @@
+.heart{
+    width: 25px;
+    height: 25px;
+   position: relative;
+   padding: 25px 25px 25px 25px; 
+    cursor: pointer;
+}
+.HeartNormal{
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    &:hover{
+    color:transparent;
+    background-color: transparent;
+}
+}
+
+.HeartFull{
+    z-index: 1;
+    color: #FF79DA;
+    cursor: pointer;
+}

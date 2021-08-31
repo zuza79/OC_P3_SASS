@@ -1,0 +1,48 @@
+/*----------Footer-----------------*/
+footer {
+    color: white;
+    background-color : $background-color-gray-dark;
+    padding : 25px;
+   
+}
+.FooterItem {
+    @include flex-direction-row-center; 
+    justify-content: left;
+    padding: 5px;
+    gap : 10px;
+}
+.pFooter {
+    letter-spacing: normal;
+    font-weight: 100;
+    color : white;
+}
+.fa-utensils, .fa-hands-helping{
+    color: white;
+}
+
+@media screen and (min-width: map-get($breakpoints, desktop))
+{
+    .FooterTitle{
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 2px;  
+      }
+      .FooterBloc{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+}
+@media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop )) 
+{
+    .FooterTitle{
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 2px;  
+    }
+    .FooterBloc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+} 

@@ -1,0 +1,65 @@
+/*--------Functioning--------*/
+.functioning{
+    padding: 40px 10px 50px 0px;
+}
+.SelectMenu {
+    display: flex;
+    justify-content: center;
+    
+}
+.TitleFonc{
+    padding-left: 20px;
+}
+.select{
+    width: 300px;
+    height: 75px; 
+    @include flex-direction-row-center;
+    background-color: $background-color-gray-light;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    box-shadow: 5px 5px 5px 3px $background-color-gray-light; 
+}
+.fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover{
+    cursor: pointer;
+    color: $background-color-primary;
+}
+.number{
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    left: 14px;
+    @include flex-direction-row-center;
+    border-radius: 25px;
+    background-color: $background-color-primary;
+    margin-top: 25px;
+}
+.TxtFunc{
+    width: 220px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+/*--Desktop--*/
+@media screen and (min-width: map-get($breakpoints, desktop))
+{
+    .select{
+        width: 70%;
+    }
+ .TitleFonc{
+     text-align: center;
+ }   
+ .TxtFunc{
+     font-size: 16px;
+     width: 80%;
+ }
+ .FuncMenu{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
+ 
+}

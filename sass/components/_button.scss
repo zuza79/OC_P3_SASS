@@ -1,0 +1,16 @@
+/*----Button Resto----*/
+.ButtonResto{
+    width: 215px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    @include flex-direction-row-center;
+    @include margin-center;
+    @include border-button;
+    @include backgnd-shadow-transition;
+    &:hover{
+        width: 205px;
+        height: 45px;
+        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 20%);
+    }
+}

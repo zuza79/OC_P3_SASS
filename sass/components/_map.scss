@@ -1,0 +1,30 @@
+/*-----------map*--------------------*/
+.FormMap {
+    height: 50px;
+    @include flex-direction-row-center;
+    background-color :  darken($background-color-gray-light, 5%);
+        & #map {
+        margin-top: auto;
+        margin-bottom: auto;
+        color: black;
+        }
+        & input::placeholder{
+        color : black;
+        font-weight : 800;
+        font-family : roboto;
+}
+}
+#searching {
+    width : 130px;
+    padding : 10px;
+    outline : none;
+    
+}
+.InSearching {
+    color: black;
+    border-color : transparent;
+    background-color : darken($background-color-gray-light, 5%);
+}
+input {
+    padding-left : 10px;
+}

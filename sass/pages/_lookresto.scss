@@ -1,0 +1,14 @@
+
+/*-------Look Resto----------*/
+.LookResto {
+    padding : 30px;
+    text-align: center;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: map-get($breakpoints, desktop))
+{
+    .TxtReserveMenu, .TxtDiscoveryResto{
+        @include flex-direction-row-center
+    }
+}
