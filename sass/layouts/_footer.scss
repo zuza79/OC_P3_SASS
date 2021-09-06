@@ -20,6 +20,23 @@ footer {
     color: white;
 }
 
+/*--tablet--*/
+@media screen and (min-width: map-get($tablet,tablet))
+{
+    .FooterTitle{
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 2px;  
+      
+    }
+    .FooterBloc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+} 
+
+/*--desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop))
 {
     .FooterTitle{
@@ -33,16 +50,3 @@ footer {
           justify-content: space-between;
       }
 }
-@media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop )) 
-{
-    .FooterTitle{
-      text-align: center;
-      font-size: 22px;
-      letter-spacing: 2px;  
-    }
-    .FooterBloc{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-} 

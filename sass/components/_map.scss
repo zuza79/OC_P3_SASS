@@ -6,10 +6,10 @@
         & #map {
         margin-top: auto;
         margin-bottom: auto;
-        color: black;
+        color:$color-black;
         }
         & input::placeholder{
-        color : black;
+        color :$color-black;
         font-weight : 800;
         font-family : roboto;
 }
@@ -21,7 +21,7 @@
     
 }
 .InSearching {
-    color: black;
+    color: $color-black;
     border-color : transparent;
     background-color : darken($background-color-gray-light, 5%);
 }

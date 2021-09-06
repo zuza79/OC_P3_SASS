@@ -1,3 +1,734 @@
+@charset "UTF-8";
+/*Utils :
+     Variables / Fonctions / Mixins / Placeholders.
+Base.
+Composants.
+Layout.
+Pages.
+Thèmes.*/
+/*backgroung-color*/
+/*color*/
+/*responsive*/
+/*---mixin---*/
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
 
+/*----styles-----*/
+h1 {
+  font-family: shrikhand;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: shrikhand;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  letter-spacing: -0.05em;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: #474f4e;
+}
+
+input {
+  cursor: pointer;
+}
+
+.TxtRM {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/*-----------map*--------------------*/
+.FormMap {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+.FormMap #map {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+}
+.FormMap input::placeholder {
+  color: black;
+  font-weight: 800;
+  font-family: roboto;
+}
+
+#searching {
+  width: 130px;
+  padding: 10px;
+  outline: none;
+}
+
+.InSearching {
+  color: black;
+  border-color: transparent;
+  background-color: #e5e5e5;
+}
+
+input {
+  padding-left: 10px;
+}
+
+/*----Button Resto----*/
+.ButtonResto {
+  width: 215px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 500ms linear, transform 150ms linear;
+}
+.ButtonResto:hover {
+  width: 205px;
+  height: 45px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*----Button Menu Resto----*/
+.ButtonMenuResto {
+  width: 190px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 500ms linear, transform 150ms linear;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 25px;
+  border: none;
+  transition: box-shadow 500ms linear, transform 150ms linear;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.ButtonMenuResto .ButtonMenuResto:hover {
+  width: 205px;
+  height: 45px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*----------Footer-----------------*/
+footer {
+  color: white;
+  background-color: #474f4e;
+  padding: 25px;
+}
+
+.FooterItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  padding: 5px;
+  gap: 10px;
+}
+
+.pFooter {
+  letter-spacing: normal;
+  font-weight: 100;
+  color: white;
+}
+
+.fa-utensils, .fa-hands-helping {
+  color: white;
+}
+
+/*--tablet--*/
+@media screen and (min-width: 767px) {
+  .FooterTitle {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .FooterBloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/*--desktop--*/
+@media screen and (min-width: 999px) {
+  .FooterTitle {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .FooterBloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/*logo*/
+.logo {
+  width: 170px;
+  height: 30px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HeaderPages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  padding: 20px 25px 10px 25px;
+}
+
+/*--Img--*/
+.img {
+  width: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.ImgRestoMenu {
+  width: 100%;
+  border-radius: 0;
+}
+
+.ImgBloc {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0 0;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0px;
+}
+
+.TxtImg {
+  width: 100%;
+}
+
+.h4TxtImg {
+  font-family: shrikhand;
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.HeartNormal {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.6s ease-in-out;
+}
+.HeartNormal:hover {
+  opacity: 0;
+}
+.HeartNormal:hover + .HeartFull {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
+}
+
+.HeartFull {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(63deg, #9356DC 0%, #99E2D0 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
+}
+
+.fa-lg {
+  line-height: 1;
+}
+
+/*--------Functioning--------*/
+.functioning {
+  padding: 40px 10px 50px 0px;
+}
+
+.SelectMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.TitleFonc {
+  padding-left: 20px;
+}
+
+.select {
+  width: 300px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding-left: 30px;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+}
+
+.fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover {
+  cursor: pointer;
+  color: #9356DC;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  left: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #9356DC;
+  margin-top: 25px;
+}
+
+.TxtFunc {
+  width: 220px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: 999px) {
+  .select {
+    width: 70%;
+  }
+
+  .TitleFonc {
+    text-align: center;
+  }
+
+  .TxtFunc {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .FuncMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/*------HomePage-------*/
+.HomePage {
+  margin-top: 10px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+  border-top: solid 3px #d6dbdf;
+}
+
+/*loading visibility: hidden;*/
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: #f2f2f2;
+  position: absolute;
+  z-index: 20;
+  animation: LoadingPage 3s ease-in-out normal forwards;
+}
+
+@keyframes LoadingPage {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.BlocLoading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ImgLoading {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AnimLoading {
+  border: 20px solid #9356DC;
+  border-radius: 50%;
+  border-top: 20px solid #FF79DA;
+  border-bottom: 20px solid #99E2D0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+/*-------Look Resto----------*/
+.LookResto {
+  padding: 30px;
+  text-align: center;
+}
+
+.TxtReserveMenu {
+  margin: 10px;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: 999px) {
+  .TxtReserveMenu, .TxtDiscoveryResto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*----Resto---------*/
+.resto {
+  padding: 55px 20px 55px 20px;
+  background-color: #f2f2f2;
+}
+
+.LinkResto {
+  color: black;
+}
+
+.CardResto {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.ImgResto {
+  width: 100%;
+  object-fit: cover;
+  height: 175px;
+  border-radius: 25px 25px 0 0;
+}
+
+.BlocResto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+}
+
+.TxtResto {
+  color: black;
+  padding: 10px 10px 10px 19px;
+}
+
+.new {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #99E2D0;
+  color: #278827;
+}
+
+/*--Desktop--*/
+@media screen and (min-width: 999px) {
+  .TwoMenusResto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .TitleResto {
+    text-align: center;
+  }
+}
+/*--Menu--*/
+.BlocMenu {
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+  padding: 15px;
+}
+
+.h5Menu {
+  margin-bottom: 5px;
+}
+
+.link {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin: 5px 0 10px 0;
+}
+
+.BlocItem {
+  width: 350px;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  margin-bottom: 10px;
+}
+
+.TxtMenuItem {
+  width: 240px;
+  padding-left: 10px;
+}
+
+.pMenuItem {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  width: 65px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  text-align: right;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  transform: translateX(50px);
+}
+
+.MenuPlats, .MenuDesserts {
+  padding-top: 15px;
+}
+
+/*--tablet--*/
+/*--desktop--*/
+@media screen and (min-width: 999px) {
+  .BlocMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .MenuEntrees, .MenuPlats, .MenuDesserts {
+    width: 32%;
+  }
+
+  .BlocItem {
+    width: 80%;
+  }
+}
+/*--Check anim--*/
+.check {
+  width: 55px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transform: translateX(80px);
+}
+
+.CheckStart {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #99E2D0;
+}
+
+.BlocItem:hover .check {
+  transform: translateX(0px);
+  transition-duration: 4s;
+}
+
+.BlocItem:hover .CheckStart {
+  animation: CheckRotate 4s linear 1;
+}
+
+@keyframes CheckRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  99% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate 0deg;
+  }
+}
+.BlocItem:hover .price {
+  transform: translateX(0px);
+  transition-duration: 4s;
+  padding-left: 30px;
+}
+
+.BlocItem:hover .TxtMenuItem {
+  width: 200px;
+}
+
+/*--desktop--*/
+@media screen and (min-width: 999px) {
+  .check {
+    transform: translateX(2000px);
+  }
+}
 
 /*# sourceMappingURL=restaurant.css.map */

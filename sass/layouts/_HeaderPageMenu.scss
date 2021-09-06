@@ -1,0 +1,36 @@
+.HeaderPages{
+    @include flex-direction-row-center;
+    gap:65px;
+    padding: 20px 25px 10px 25px;
+}
+/*--Img--*/
+.img{
+    @include image;
+    @include margin-center;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+.ImgRestoMenu{
+    width: 100%;
+    border-radius: 0;
+}
+.ImgBloc{
+    width: 100%;
+    height: 90px;
+    @include flex-direction-row-center;
+    border-radius: 30px 30px 0 0;
+    background-color: $background-color-gray-light;
+    position: absolute;
+    bottom: 0px;
+}
+.TxtImg{
+    width: 100%;
+}
+.h4TxtImg{
+    font-family: shrikhand;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}

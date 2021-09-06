@@ -4,7 +4,9 @@
     padding : 30px;
     text-align: center;
 }
-
+.TxtReserveMenu{
+    margin: 10px;
+}
 /*--Desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop))
 {

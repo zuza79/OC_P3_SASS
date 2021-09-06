@@ -6,6 +6,9 @@ Composants.
 Layout.
 Pages.
 Thèmes.*/
+/*backgroung-color*/
+/*color*/
+/*responsive*/
 /*---mixin---*/
 body {
   font-family: "Roboto", sans-serif;
@@ -49,6 +52,9 @@ h6 {
   font-weight: 900;
   margin-bottom: 5px;
   margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 p {
@@ -70,10 +76,9 @@ input {
   cursor: pointer;
 }
 
-.TxtReserveMenu {
-  font-size: 25px;
+.TxtRM {
+  font-size: 20px;
   font-weight: 900;
-  margin: 10px;
 }
 
 /*-----------map*--------------------*/
@@ -137,6 +142,40 @@ input {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
+/*----Button Menu Resto----*/
+.ButtonMenuResto {
+  width: 190px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 500ms linear, transform 150ms linear;
+  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 25px;
+  border: none;
+  transition: box-shadow 500ms linear, transform 150ms linear;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.ButtonMenuResto .ButtonMenuResto:hover {
+  width: 205px;
+  height: 45px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
 /*----------Footer-----------------*/
 footer {
   color: white;
@@ -164,7 +203,8 @@ footer {
   color: white;
 }
 
-@media screen and (min-width: 800px) {
+/*--tablet--*/
+@media screen and (min-width: 767px) {
   .FooterTitle {
     text-align: center;
     font-size: 22px;
@@ -177,7 +217,8 @@ footer {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: ) and (max-width: 800px) {
+/*--desktop--*/
+@media screen and (min-width: 999px) {
   .FooterTitle {
     text-align: center;
     font-size: 22px;
@@ -201,28 +242,51 @@ footer {
 }
 
 .heart {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   position: relative;
-  padding: 25px 25px 25px 25px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
   cursor: pointer;
 }
 
 .HeartNormal {
-  color: black;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  cursor: pointer;
-  background-color: transparent;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.6s ease-in-out;
 }
 .HeartNormal:hover {
-  color: transparent;
-  background-color: transparent;
+  opacity: 0;
+}
+.HeartNormal:hover + .HeartFull {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
 }
 
 .HeartFull {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(63deg, #9356DC 0%, #99E2D0 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
   z-index: 1;
-  color: #FF79DA;
-  cursor: pointer;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
+}
+
+.fa-lg {
+  line-height: 1;
 }
 
 /*--------Functioning--------*/
@@ -282,7 +346,7 @@ footer {
 }
 
 /*--Desktop--*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 999px) {
   .select {
     width: 70%;
   }
@@ -391,8 +455,12 @@ footer {
   text-align: center;
 }
 
+.TxtReserveMenu {
+  margin: 10px;
+}
+
 /*--Desktop--*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 999px) {
   .TxtReserveMenu, .TxtDiscoveryResto {
     display: flex;
     flex-direction: row;
@@ -464,7 +532,7 @@ footer {
 }
 
 /*--Desktop--*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 999px) {
   .TwoMenusResto {
     display: flex;
     flex-direction: row;

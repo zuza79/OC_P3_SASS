@@ -1,3 +1,4 @@
+/*backgroung-color*/
 $background-color-gray: #f6f6f6;
 $background-color-gray-light:#f2f2f2;
 $background-color-gray-dark: #474f4e;
@@ -6,6 +7,13 @@ $background-color-primary: #9356DC;
 $background-color-secondary:#FF79DA;
 $background-color-tertiary:#99E2D0;
 
-$breakpoints: (mobile: 599px);
-$breakpoints: (tablet: 600px);
-$breakpoints: (desktop: 800px);
+/*color*/
+$color-black: black;
+$color-white: white;
+$color-border-HomePage: #d6dbdf;
+$color-new:#278827;
+
+/*responsive*/
+$tablet: ("tablet": 767px);
+$breakpoints: ("desktop": 999px);
+

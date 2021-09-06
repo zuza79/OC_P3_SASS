@@ -34,6 +34,9 @@ h6{
     font-weight: 900;
     margin-bottom: 5px;
     margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
 }
 p{
     margin-top: 0px;
@@ -50,8 +53,8 @@ i{
 input{
     cursor: pointer;
 }
-.TxtReserveMenu {
-    font-size : 25px;
+.TxtRM {
+    font-size : 20px;
     font-weight : 900;
-    margin : 10px;
 }
+

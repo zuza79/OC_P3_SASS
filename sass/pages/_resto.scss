@@ -4,7 +4,7 @@
     background-color: $background-color-gray-light;
 }
 .LinkResto{
-    color: black;
+    color:$color-black;
 }
 .CardResto{
     width: 100%;
@@ -25,11 +25,11 @@
     width: 100%;
     @include flex-direction-row-center;
     justify-content: space-between;
-    background-color: white;
+    background-color:$color-white;
     border-radius: 0 0 25px 25px;
 }
 .TxtResto{
-    color: black;
+    color:$color-black;
     padding: 10px 10px 10px 19px;
 }
 .new{
@@ -42,7 +42,7 @@
     font-size: 12px;
     font-weight: 600;
     background-color: $background-color-tertiary;
-    color: #278827;
+    color:$color-new;
 }
 /*--Desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop))
