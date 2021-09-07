@@ -47,7 +47,7 @@ h5 {
   margin-bottom: 10px;
 }
 
-h6 {
+h6, .TitleMenuItem {
   font-size: 15px;
   font-weight: 900;
   margin-bottom: 5px;
@@ -135,14 +135,21 @@ input {
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
   transition: box-shadow 500ms linear, transform 150ms linear;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
 .ButtonResto:hover {
   width: 205px;
   height: 45px;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
 /*----Button Menu Resto----*/
+.ButtonMenu {
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .ButtonMenuResto {
   width: 190px;
   height: 55px;
@@ -158,17 +165,13 @@ input {
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
   transition: box-shadow 500ms linear, transform 150ms linear;
-  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   color: white;
   font-size: 15px;
   font-weight: 400;
   border-radius: 25px;
   border: none;
   transition: box-shadow 500ms linear, transform 150ms linear;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 10px;
 }
 .ButtonMenuResto .ButtonMenuResto:hover {
   width: 205px;
@@ -180,7 +183,7 @@ input {
 footer {
   color: white;
   background-color: #474f4e;
-  padding: 25px;
+  padding: 20px;
 }
 
 .FooterItem {
@@ -254,6 +257,7 @@ footer {
 .HeartNormal {
   width: 25px;
   height: 25px;
+  color: black;
   position: absolute;
   opacity: 1;
   display: flex;
@@ -291,12 +295,14 @@ footer {
 
 /*--------Functioning--------*/
 .functioning {
-  padding: 40px 10px 50px 0px;
+  padding: 20px 30px 50px 0px;
 }
 
 .SelectMenu {
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .TitleFonc {
@@ -314,7 +320,7 @@ footer {
   margin-bottom: 20px;
   border-radius: 20px;
   padding-left: 30px;
-  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
 .fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover {
@@ -470,7 +476,7 @@ footer {
 }
 /*----Resto---------*/
 .resto {
-  padding: 55px 20px 55px 20px;
+  padding: 35px 20px 55px 20px;
   background-color: #f2f2f2;
 }
 
@@ -483,13 +489,13 @@ footer {
   height: 250px;
   position: relative;
   border-radius: 25px 25px 25px 25px;
-  box-shadow: 5px 5px 5px 3px #f2f2f2;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .ImgResto {

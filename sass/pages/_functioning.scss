@@ -1,10 +1,11 @@
 /*--------Functioning--------*/
 .functioning{
-    padding: 40px 10px 50px 0px;
+    padding: 20px 30px 50px 0px;
 }
 .SelectMenu {
     display: flex;
     justify-content: center;
+    @include margin-center;
     
 }
 .TitleFonc{
@@ -18,7 +19,7 @@
     margin-bottom: 20px;
     border-radius: 20px;
     padding-left: 30px;
-    box-shadow: 5px 5px 5px 3px $background-color-gray-light; 
+    @include box-shadow-gray; 
 }
 .fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover{
     cursor: pointer;

@@ -1,6 +1,6 @@
 /*----Resto---------*/
 .resto{
-    padding: 55px 20px 55px 20px;
+    padding: 35px 20px 55px 20px;
     background-color: $background-color-gray-light;
 }
 .LinkResto{
@@ -14,7 +14,7 @@
     @include box-shadow-gray; 
     @include flex-direction-row-center;
     flex-direction: column;    
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .ImgResto{
     @include image;

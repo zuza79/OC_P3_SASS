@@ -8,14 +8,21 @@
     @include margin-center;
     @include border-button;
     @include backgnd-shadow-transition;
+    @include box-shadow-gray;
     &:hover{
         width: 205px;
         height: 45px;
-        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 20%);
+        @include box-shadow-gray;
     }
 }
 
 /*----Button Menu Resto----*/
+.ButtonMenu{
+    background-color: $background-color-gray-light;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
 .ButtonMenuResto{
     width: 190px;
     height: 55px;
@@ -30,10 +37,7 @@
     border-radius: 25px;
     border: none;
     transition: box-shadow 500ms linear, transform 150ms linear;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:40px;
-    margin-bottom: 10px;
+      
     & .ButtonMenuResto:hover{
         width: 205px;
         height: 45px;

@@ -13,20 +13,25 @@
     background-color:$background-color-tertiary;
     margin: 5px 0 10px 0 ;
 }
-.BlocItem{
-    width: 350px;
+.BlocAnim{
+    width: 345px;
     height: 65px;
     @include flex-direction-row-center;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    justify-content: start;
     border-radius: 15px;
     background-color: $color-white;
-    box-shadow: 5px 5px 5px 3px $background-color-gray-light;
-    margin-bottom: 10px
+    @include box-shadow-gray;
+    margin-bottom: 10px;
+}
+.TitleMenuItem, .TxtMenuItem{
+    width: 280px;
+    padding-left: 10px;
 }
 .TxtMenuItem{
-    width: 240px;
-    padding-left: 10px;
+    @include flex-direction-row-center;
+    justify-content: space-between;
+    text-align: left;
 }
 .pMenuItem{
     font-size: 13px;
@@ -37,14 +42,10 @@
     white-space:nowrap;
 }
 .price{
-    width: 65px;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    text-align: right;
     font-weight: bolder;
-    padding-bottom: 10px;
     transform: translateX(50px);
+    padding-right: 20px;
+
 }
 .MenuPlats, .MenuDesserts{
     padding-top: 15px;

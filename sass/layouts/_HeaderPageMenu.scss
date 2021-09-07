@@ -1,14 +1,18 @@
 .HeaderPages{
     @include flex-direction-row-center;
+    justify-content: flex-start;
+    padding-left: 20px;
     gap:65px;
-    padding: 20px 25px 10px 25px;
+}
+.fa-arrow-left{
+    color: $color-black;
 }
 /*--Img--*/
 .img{
     @include image;
     @include margin-center;
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: 250px;
     display: flex;
     position: relative;
 }
@@ -18,7 +22,7 @@
 }
 .ImgBloc{
     width: 100%;
-    height: 90px;
+    height: 70px;
     @include flex-direction-row-center;
     border-radius: 30px 30px 0 0;
     background-color: $background-color-gray-light;
@@ -33,4 +37,14 @@
     font-size: 25px;
     letter-spacing: 1px;
     padding-left: 20px;
+}
+/*--desktop--*/
+@media screen and (min-width: map-get($breakpoints, desktop)){
+
+.img{
+width: 80%;
+height: 500px;
+}
+
+
 }
