@@ -6,7 +6,7 @@ footer {
    
 }
 .FooterItem {
-    @include flex-direction-row-center; 
+    display: flex; 
     justify-content: left;
     padding: 5px;
     gap : 10px;
@@ -32,7 +32,7 @@ footer {
     .FooterBloc{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 50px;
     }
 } 
 

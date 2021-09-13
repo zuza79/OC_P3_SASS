@@ -2,6 +2,7 @@
 .FormMap {
     height: 50px;
     @include flex-direction-row-center;
+    border-top: solid 3px $color-border-HomePage;
     background-color :  darken($background-color-gray-light, 5%);
         & #map {
         margin-top: auto;
@@ -27,4 +28,19 @@
 }
 input {
     padding-left : 10px;
+}
+
+/*--desktop--*/
+@media screen and (min-width: map-get($breakpoints, desktop))
+{
+    .FormMap{
+        width: 200px;
+     @include margin-center;
+     background-color: darken($background-color-gray-light, 5%);
+    border-top: solid 3px $color-border-HomePage;
+    }
+ .InSearching{
+     width: 200px;
+ }  
+
 }

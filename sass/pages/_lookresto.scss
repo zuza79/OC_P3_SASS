@@ -10,7 +10,11 @@
 /*--Desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop))
 {
+    .LookResto{
+        padding: 10px;
+    }
     .TxtReserveMenu, .TxtDiscoveryResto{
-        @include flex-direction-row-center
+        @include flex-direction-row-center;
+        gap: 5px;
     }
 }

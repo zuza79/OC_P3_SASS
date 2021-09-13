@@ -3,6 +3,8 @@
     background-color:$background-color-gray-light ;
     padding-bottom: 50px;
     padding: 15px;
+     
+       @include margin-center;
 }
 .h5Menu{
     margin-bottom:5px;
@@ -24,14 +26,9 @@
     @include box-shadow-gray;
     margin-bottom: 10px;
 }
-.TitleMenuItem, .TxtMenuItem{
-    width: 280px;
+.BlocItem{
+    width: 270px;
     padding-left: 10px;
-}
-.TxtMenuItem{
-    @include flex-direction-row-center;
-    justify-content: space-between;
-    text-align: left;
 }
 .pMenuItem{
     font-size: 13px;
@@ -42,10 +39,18 @@
     white-space:nowrap;
 }
 .price{
+    width: 65px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 0 15px 15px 0;
     font-weight: bolder;
-    transform: translateX(50px);
-    padding-right: 20px;
+    padding-right: 15px;
 
+}
+.h5Menu{
+    @include margin-center;
 }
 .MenuPlats, .MenuDesserts{
     padding-top: 15px;
@@ -53,19 +58,28 @@
 
 /*--tablet--*/
 @media screen and (min-width: map-get($tablet,tablet)){
-
+    .BlocMenu{
+       
+       border-top: solid 3px $color-border-HomePage;
+    } 
+    .h5Menu{
+        text-align: center
+    }
+    .BlocAnim, .link{
+        @include margin-center;
+    }
+    
 }
 
 /*--desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop)){
   .BlocMenu{
       @include flex-direction-row-center;
-     justify-content: space-between; 
+     @include margin-center;
+     border-top: solid 3px $color-border-HomePage;
   } 
   .MenuEntrees, .MenuPlats, .MenuDesserts{
-      width: 32%;
+      width: 30%;
   }
-  .BlocItem{
-      width: 80%;
-  }
+  
 }

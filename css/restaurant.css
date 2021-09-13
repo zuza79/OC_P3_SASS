@@ -88,6 +88,7 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-top: solid 3px #d6dbdf;
   background-color: #e5e5e5;
 }
 .FormMap #map {
@@ -117,6 +118,20 @@ input {
   padding-left: 10px;
 }
 
+/*--desktop--*/
+@media screen and (min-width: 999px) {
+  .FormMap {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5e5e5;
+    border-top: solid 3px #d6dbdf;
+  }
+
+  .InSearching {
+    width: 200px;
+  }
+}
 /*----Button Resto----*/
 .ButtonResto {
   width: 215px;
@@ -133,14 +148,16 @@ input {
   border: none;
   color: white;
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
   transition: box-shadow 500ms linear, transform 150ms linear;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
 .ButtonResto:hover {
   width: 205px;
   height: 45px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+  transition: box-shadow 500ms linear, transform 150ms linear;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*----Button Menu Resto----*/
@@ -163,7 +180,6 @@ input {
   border: none;
   color: white;
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
   transition: box-shadow 500ms linear, transform 150ms linear;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   color: white;
@@ -173,12 +189,22 @@ input {
   border: none;
   transition: box-shadow 500ms linear, transform 150ms linear;
 }
-.ButtonMenuResto .ButtonMenuResto:hover {
-  width: 205px;
-  height: 45px;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+.ButtonMenuResto:hover {
+  width: 185px;
+  height: 50px;
+  opacity: 0.8;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+  transition: box-shadow 500ms linear, transform 150ms linear;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+/*--desktop--*/
+@media screen and (min-width: 999px) {
+  .ButtonMenu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 /*----------Footer-----------------*/
 footer {
   color: white;
@@ -188,9 +214,6 @@ footer {
 
 .FooterItem {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   justify-content: left;
   padding: 5px;
   gap: 10px;
@@ -217,7 +240,7 @@ footer {
   .FooterBloc {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 50px;
   }
 }
 /*--desktop--*/
@@ -264,7 +287,6 @@ footer {
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
   height: 250px;
   display: flex;
   position: relative;
@@ -299,60 +321,103 @@ footer {
   padding-left: 20px;
 }
 
+/*--tablet--*/
+@media screen and (min-width: 767px) {
+  .HeaderPages {
+    justify-content: center;
+  }
+
+  .img {
+    width: 50%;
+    height: 300px;
+  }
+}
 /*--desktop--*/
 @media screen and (min-width: 999px) {
+  .HeaderPages {
+    justify-content: center;
+  }
+
   .img {
-    width: 80%;
-    height: 500px;
+    width: 35%;
+    height: 300px;
   }
 }
 .heart {
   width: 30px;
   height: 30px;
-  position: relative;
-  display: flex;
-  align-items: center;
   padding: 20px;
   cursor: pointer;
+  position: relative;
+  display: flex;
 }
 
 .HeartNormal {
-  width: 25px;
-  height: 25px;
-  color: black;
+  width: 30px;
+  height: 30px;
   position: absolute;
+  color: black;
   opacity: 1;
-  display: flex;
+  z-index: 1;
+  display: flex !important;
   align-items: center;
+  justify-content: center;
   transition: opacity 0.6s ease-in-out;
 }
+
 .HeartNormal:hover {
   opacity: 0;
-}
-.HeartNormal:hover + .HeartFull {
-  opacity: 1;
-  animation: heart-full 0.4s linear both;
+  font-weight: 0;
+  cursor: pointer;
 }
 
+.HeartFull:hover {
+  opacity: 1;
+  transition: transform 250ms ease;
+  animation: AnimHeart 250ms;
+}
+
+@keyframes AnimHeart {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.25;
+    transform: scale(1.25);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+    transform: scale(1.25);
+  }
+  90% {
+    opacity: 0.9;
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .HeartFull {
-  width: 25px;
-  height: 25px;
-  display: flex;
+  width: 30px;
+  height: 30px;
+  display: flex !important;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
   background: linear-gradient(63deg, #9356DC 0%, #99E2D0 100%);
   background-clip: content-box;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
   opacity: 0;
-  z-index: 1;
-  transform-origin: 50% bottom;
+  transform-origin: initial;
   transform: scale(1);
   animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
-}
-
-.fa-lg {
-  line-height: 1;
 }
 
 /*--------Functioning--------*/
@@ -415,17 +480,24 @@ footer {
 
 /*--Desktop--*/
 @media screen and (min-width: 999px) {
+  .functioning {
+    padding: 10px;
+  }
+
   .select {
-    width: 70%;
+    width: 230px;
+    padding-left: 20px;
   }
 
   .TitleFonc {
     text-align: center;
+    margin: 10px;
   }
 
   .TxtFunc {
     font-size: 16px;
-    width: 80%;
+    width: 85%;
+    margin-left: 15px;
   }
 
   .FuncMenu {
@@ -434,14 +506,25 @@ footer {
     justify-content: center;
   }
 }
+/*--tablet--*/
+@media screen and (min-width: 767px) {
+  .TitleFonc {
+    text-align: center;
+  }
+}
 /*------HomePage-------*/
 .HomePage {
   margin-top: 10px;
   padding-bottom: 60px;
   background-color: #f6f6f6;
-  border-top: solid 3px #d6dbdf;
 }
 
+/*--Desktop--*/
+@media screen and (min-width: 999px) {
+  .HomePage {
+    padding-bottom: 10px;
+  }
+}
 /*loading visibility: hidden;*/
 .loading {
   width: 100%;
@@ -465,7 +548,7 @@ footer {
     opacity: 1;
   }
   99% {
-    opacity: 0;
+    opacity: 0.2;
   }
   100% {
     opacity: 0;
@@ -529,11 +612,16 @@ footer {
 
 /*--Desktop--*/
 @media screen and (min-width: 999px) {
+  .LookResto {
+    padding: 10px;
+  }
+
   .TxtReserveMenu, .TxtDiscoveryResto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 5px;
   }
 }
 /*----Resto---------*/
@@ -601,6 +689,19 @@ footer {
 
 /*--Desktop--*/
 @media screen and (min-width: 999px) {
+  .resto {
+    padding: 10px;
+  }
+
+  .TitleResto {
+    margin: 10px;
+  }
+
+  .LinkResto {
+    width: 40%;
+    height: 120%;
+  }
+
   .TwoMenusResto {
     display: flex;
     flex-direction: row;
@@ -613,11 +714,31 @@ footer {
     text-align: center;
   }
 }
+/*--tablet--*/
+@media screen and (min-width: 767px) {
+  .TitleResto {
+    text-align: center;
+  }
+
+  .TwoMenusResto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .LinkResto {
+    width: 40%;
+  }
+}
 /*--Menu--*/
 .BlocMenu {
   background-color: #f2f2f2;
   padding-bottom: 50px;
   padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .h5Menu {
@@ -646,18 +767,9 @@ footer {
   margin-bottom: 10px;
 }
 
-.TitleMenuItem, .TxtMenuItem {
-  width: 280px;
+.BlocItem {
+  width: 270px;
   padding-left: 10px;
-}
-
-.TxtMenuItem {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
 }
 
 .pMenuItem {
@@ -670,9 +782,19 @@ footer {
 }
 
 .price {
+  width: 65px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 0 15px 15px 0;
   font-weight: bolder;
-  transform: translateX(50px);
-  padding-right: 20px;
+  padding-right: 15px;
+}
+
+.h5Menu {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .MenuPlats, .MenuDesserts {
@@ -680,6 +802,20 @@ footer {
 }
 
 /*--tablet--*/
+@media screen and (min-width: 767px) {
+  .BlocMenu {
+    border-top: solid 3px #d6dbdf;
+  }
+
+  .h5Menu {
+    text-align: center;
+  }
+
+  .BlocAnim, .link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /*--desktop--*/
 @media screen and (min-width: 999px) {
   .BlocMenu {
@@ -687,15 +823,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 3px #d6dbdf;
   }
 
   .MenuEntrees, .MenuPlats, .MenuDesserts {
-    width: 32%;
-  }
-
-  .BlocItem {
-    width: 80%;
+    width: 30%;
   }
 }
 /*--Check anim--*/
@@ -703,60 +837,67 @@ footer {
   display: flex;
   flex-direction: row;
 }
+.BlocAnim:hover .BlocItem {
+  width: 200px;
+}
+.BlocAnim:hover .price {
+  padding-left: 15px;
+  width: 50px;
+}
+.BlocAnim:hover > .check {
+  margin-right: 0px;
+  opacity: 1;
+}
+.BlocAnim:hover .fa-check-circle {
+  transition: all 0.3s 0.3s;
+  transform: rotate(360deg);
+}
+
+.fa-check-circle {
+  color: white;
+  background-color: #99E2D0;
+}
 
 .check {
   width: 55px;
   height: 65px;
+  opacity: 0;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
-  transform: translateX(200px);
-}
-
-.CheckStart {
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  background-color: #99E2D0;
-}
-
-.BlocAnim:hover .check {
-  transform: translateX(0px);
-  transition-duration: 4s;
-}
-
-.BlocAnim:hover .CheckStart {
-  animation: CheckRotate 4s linear 1;
-}
-
-@keyframes CheckRotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  99% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate 0deg;
-  }
-}
-.BlocAnim:hover .price {
-  transform: translateX(0px);
-  transition-duration: 4s;
-  padding-right: 5px;
-  padding-left: 30px;
-}
-
-.BlocAnim:hover .TxtMenuItem {
-  width: 260px;
+  margin-right: -75px;
+  transition-duration: 0.8s;
 }
 
 /*--desktop--*/
-@media screen and (min-width: 999px) {
-  .check {
-    transform: translateX(2000px);
+.MenuEntrees {
+  animation: AnimMenu 3s;
+}
+
+.MenuPlats {
+  animation: AnimMenu 6s;
+}
+
+.MenuDesserts {
+  animation: AnimMenu 9s;
+}
+
+@keyframes AnimMenu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

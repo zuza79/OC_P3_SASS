@@ -47,6 +47,16 @@
 /*--Desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop))
 {
+    .resto{
+        padding: 10px;
+    }
+    .TitleResto{
+        margin: 10px;
+    }
+    .LinkResto{
+        width: 40%;
+        height: 120%;
+    }
    .TwoMenusResto{
        @include flex-direction-row-center;
        gap: 30px;
@@ -54,4 +64,18 @@
    .TitleResto{
        text-align: center;
    }
+}
+/*--tablet--*/
+@media screen and (min-width: map-get($tablet,tablet))
+{
+    .TitleResto{
+        text-align: center;
+    }
+    .TwoMenusResto{
+            @include flex-direction-row-center;
+            gap: 30px;
+    } 
+    .LinkResto{
+        width: 40%;
+    }
 }

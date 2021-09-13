@@ -12,7 +12,7 @@
 @keyframes LoadingPage {
     0% {opacity: 1;}
     75% {opacity: 1;}
-    99% {opacity: 0;}
+    99% {opacity: 0.2;}
     100% {opacity: 0;
         visibility: hidden;}}
 .BlocLoading{

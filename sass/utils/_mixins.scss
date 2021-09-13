@@ -14,15 +14,29 @@
     border: none;
     color:$color-white;
 }
-@mixin backgnd-shadow-transition{
+@mixin color-button{
     background: linear-gradient( 175deg, $background-color-secondary 5%, $background-color-primary 95%);
-    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
     transition: box-shadow 500ms linear, transform 150ms linear;
 }
+
+@mixin color-button-light{
+    opacity: 0.80;
+    background: linear-gradient( 175deg, $background-color-secondary 5%, $background-color-primary 95%,);
+    transition: box-shadow 500ms linear, transform 150ms linear;
+}
+     
 @mixin box-shadow-gray{   
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+@mixin box-shadow-gray-dark{
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 50%);
 }
 @mixin image{
     width: 100%;
     object-fit: cover;
+}
+
+@mixin icon{
+    width: 30px;
+   height: 30px;
 }

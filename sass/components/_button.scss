@@ -7,12 +7,13 @@
     @include flex-direction-row-center;
     @include margin-center;
     @include border-button;
-    @include backgnd-shadow-transition;
+    @include color-button;
     @include box-shadow-gray;
     &:hover{
         width: 205px;
         height: 45px;
-        @include box-shadow-gray;
+        @include color-button-light;
+        @include box-shadow-gray-dark;
     }
 }
 
@@ -29,7 +30,7 @@
     @include flex-direction-row-center;
     @include margin-center;
     @include border-button;
-    @include backgnd-shadow-transition;
+    @include color-button;
     @include box-shadow-gray;
     color: $color-white;
     font-size: 15px;
@@ -37,10 +38,18 @@
     border-radius: 25px;
     border: none;
     transition: box-shadow 500ms linear, transform 150ms linear;
-      
-    & .ButtonMenuResto:hover{
-        width: 205px;
-        height: 45px;
-        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 20%);
-    }
+    &:hover{
+            width: 185px;
+            height: 50px;
+            @include color-button-light;
+            @include box-shadow-gray-dark;
+        }
+}
+/*--desktop--*/
+@media screen and (min-width: map-get($breakpoints, desktop))
+{
+.ButtonMenu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 }
