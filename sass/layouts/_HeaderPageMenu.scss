@@ -11,7 +11,6 @@
 .img{
     @include image;
     @include margin-center;
-    
     height: 250px;
     display: flex;
     position: relative;
@@ -38,31 +37,23 @@
     letter-spacing: 1px;
     padding-left: 20px;
 }
-
 /*--tablet--*/
 @media screen and (min-width: map-get($tablet,tablet)){
     .HeaderPages{
         justify-content: center;
-     }
+    }
     .img{
         width: 50%;
         height: 300px;
-        
-        } 
+    } 
 }   
-
 /*--desktop--*/
 @media screen and (min-width: map-get($breakpoints, desktop)){
-.HeaderPages{
-   justify-content: center;
-}
-
-.img{
-width: 35%;
-height: 300px;
-
-}
-
-
-
+    .HeaderPages{
+    justify-content: center;
+    }
+    .img{
+    width: 35%;
+    height: 300px;
+    }
 }
