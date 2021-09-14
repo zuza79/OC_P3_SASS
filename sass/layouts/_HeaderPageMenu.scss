@@ -48,7 +48,7 @@
     } 
 }   
 /*--desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop)){
+@media screen and (min-width: map-get($desktop, desktop)){
     .HeaderPages{
     justify-content: center;
     }

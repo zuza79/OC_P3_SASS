@@ -11,10 +11,9 @@
 }
 @keyframes LoadingPage {
     0% {opacity: 1;}
-    75% {opacity: 1;}
-    99% {opacity: 0.2;}
-    100% {opacity: 0;
-        visibility: hidden;}}
+    80% {opacity: 0.8;}
+    100% {visibility: hidden;}
+}
 .BlocLoading{
     @include flex-direction-row-center;
     flex-direction: column;
@@ -24,22 +23,24 @@
    @include margin-center;
 }
 .AnimLoading{
-    border: 20px solid $background-color-primary;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient($background-color-primary, $background-color-secondary);
+    border: 20px solid $background-color-primary; 
     border-radius: 50%;
     border-top: 20px solid $background-color-secondary;
     border-bottom: 20px solid $background-color-tertiary;
-    width: 100px;
-    height: 100px;
+    
     margin: auto;
     margin-top: 50px;
     top:0; right: 0; bottom: 0; left: 0;
     animation: spin 3s linear infinite;
 }
 @keyframes spin {
-    0% {transform: rotate(0deg);}
+    0% {transform: rotate(0deg);
+        opacity: 1;}
     100% {transform: rotate(360deg);
-            opacity: 1;
-        visibility: hidden;}
+          visibility: hidden;}
 }
 .fondu-out{
     opacity: 0;

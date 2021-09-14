@@ -16,6 +16,7 @@ body {
 }
 
 /*----styles-----*/
+/*--shrikhand exclusive logo*/
 h1 {
   font-family: shrikhand;
   font-size: 25px;
@@ -81,7 +82,7 @@ input {
   font-weight: 900;
 }
 
-/*-----------map*--------------------*/
+/*-------map*-------*/
 .FormMap {
   height: 50px;
   display: flex;
@@ -120,6 +121,20 @@ input {
 
 /*--desktop--*/
 @media screen and (min-width: 999px) {
+  .FormMap {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5e5e5;
+    border-top: solid 3px #d6dbdf;
+  }
+
+  .InSearching {
+    width: 200px;
+  }
+}
+/*--tablet--*/
+@media screen and (min-width: 767px) {
   .FormMap {
     width: 200px;
     margin-left: auto;
@@ -205,7 +220,7 @@ input {
     padding-bottom: 10px;
   }
 }
-/*----------Footer-----------------*/
+/*----------Footer----------*/
 footer {
   color: white;
   background-color: #474f4e;
@@ -364,8 +379,7 @@ footer {
   justify-content: center;
   transition: opacity 0.6s ease-in-out;
 }
-
-.HeartNormal:hover {
+.HeartNormal :hover {
   opacity: 0;
   font-weight: 0;
   cursor: pointer;
@@ -544,14 +558,10 @@ footer {
   0% {
     opacity: 1;
   }
-  75% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.2;
+  80% {
+    opacity: 0.8;
   }
   100% {
-    opacity: 0;
     visibility: hidden;
   }
 }
@@ -570,12 +580,13 @@ footer {
 }
 
 .AnimLoading {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#9356DC, #FF79DA);
   border: 20px solid #9356DC;
   border-radius: 50%;
   border-top: 20px solid #FF79DA;
   border-bottom: 20px solid #99E2D0;
-  width: 100px;
-  height: 100px;
   margin: auto;
   margin-top: 50px;
   top: 0;
@@ -588,10 +599,10 @@ footer {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
     visibility: hidden;
   }
 }
@@ -739,6 +750,9 @@ footer {
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .h5Menu {
@@ -817,7 +831,7 @@ footer {
   }
 }
 /*--desktop--*/
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 1200px) {
   .BlocMenu {
     display: flex;
     flex-direction: row;
@@ -825,11 +839,13 @@ footer {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    align-items: flex-start;
     border-top: solid 3px #d6dbdf;
   }
 
   .MenuEntrees, .MenuPlats, .MenuDesserts {
     width: 30%;
+    padding: 0;
   }
 }
 /*--Check anim--*/
@@ -864,15 +880,15 @@ footer {
   opacity: 0;
   font-size: 18px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   margin-right: -75px;
   transition-duration: 0.8s;
 }
 
-/*--desktop--*/
 .MenuEntrees {
   animation: AnimMenu 3s;
 }
@@ -890,7 +906,7 @@ footer {
     opacity: 0;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.4;
     transform: scale(1.1);
   }
   80% {

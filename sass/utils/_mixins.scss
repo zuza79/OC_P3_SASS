@@ -18,13 +18,11 @@
     background: linear-gradient( 175deg, $background-color-secondary 5%, $background-color-primary 95%);
     transition: box-shadow 500ms linear, transform 150ms linear;
 }
-
 @mixin color-button-light{
     opacity: 0.80;
     background: linear-gradient( 175deg, $background-color-secondary 5%, $background-color-primary 95%,);
     transition: box-shadow 500ms linear, transform 150ms linear;
 }
-     
 @mixin box-shadow-gray{   
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
 }
@@ -35,7 +33,6 @@
     width: 100%;
     object-fit: cover;
 }
-
 @mixin icon{
     width: 30px;
    height: 30px;

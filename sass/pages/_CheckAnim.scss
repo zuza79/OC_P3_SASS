@@ -8,11 +8,11 @@
     &:hover .price{
         padding-left: 15px;
         width: 50px;
-        
     }
     &:hover > .check{
         margin-right: 0px;
         opacity: 1;
+        
     }
     &:hover .fa-check-circle{
         transition: all 0.3s 0.3s;
@@ -28,19 +28,9 @@
     height: 65px;
     opacity: 0;
     font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-direction-row-center;
     border-radius: 0 15px 15px 0;
     background-color: $background-color-tertiary;
     margin-right: -75px;
     transition-duration: 0.8s;
-
-}
-
-/*--desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop)){
-
-
-
 }

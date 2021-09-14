@@ -45,7 +45,7 @@
     color:$color-new;
 }
 /*--Desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop))
+@media screen and (min-width: map-get($desktop, desktop))
 {
     .resto{
         padding: 10px;

@@ -23,7 +23,6 @@
     padding-top:40px;
     padding-bottom: 40px;
 }
-
 .ButtonMenuResto{
     width: 190px;
     height: 55px;
@@ -46,7 +45,7 @@
         }
 }
 /*--desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop))
+@media screen and (min-width: map-get($desktop, desktop))
 {
 .ButtonMenu{
     padding-top: 10px;

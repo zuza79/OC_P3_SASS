@@ -15,15 +15,15 @@
     align-items: center;
     justify-content: center;
     transition: opacity 0.6s ease-in-out;
-}
-.HeartNormal:hover{
+    & :hover{
         opacity: 0;
         font-weight: 0;
         cursor: pointer;
+    }
 }
 .HeartFull:hover{
-            opacity: 1;
-            transition: transform 250ms ease;
+    opacity: 1;
+    transition: transform 250ms ease;
     animation: AnimHeart 250ms;
 } 
 @keyframes AnimHeart {

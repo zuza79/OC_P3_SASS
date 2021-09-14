@@ -3,8 +3,9 @@
     background-color:$background-color-gray-light ;
     padding-bottom: 50px;
     padding: 15px;
-     
-       @include margin-center;
+    @include margin-center;
+    align-items: flex-start;
+    @include margin-center;
 }
 .h5Menu{
     margin-bottom:5px;
@@ -13,7 +14,7 @@
     width: 40px;
     height: 3px;
     background-color:$background-color-tertiary;
-    margin: 5px 0 10px 0 ;
+    margin: 5px 0 10px 0;
 }
 .BlocAnim{
     width: 345px;
@@ -47,7 +48,6 @@
     border-radius: 0 15px 15px 0;
     font-weight: bolder;
     padding-right: 15px;
-
 }
 .h5Menu{
     @include margin-center;
@@ -55,31 +55,28 @@
 .MenuPlats, .MenuDesserts{
     padding-top: 15px;
 }
-
 /*--tablet--*/
 @media screen and (min-width: map-get($tablet,tablet)){
     .BlocMenu{
-       
-       border-top: solid 3px $color-border-HomePage;
+        border-top: solid 3px $color-border-HomePage;
     } 
     .h5Menu{
         text-align: center
     }
     .BlocAnim, .link{
         @include margin-center;
-    }
-    
+    }    
 }
-
 /*--desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop)){
+@media screen and (min-width: map-get($tabdesk, tabdesk)){
   .BlocMenu{
       @include flex-direction-row-center;
      @include margin-center;
+     align-items: flex-start;
      border-top: solid 3px $color-border-HomePage;
   } 
   .MenuEntrees, .MenuPlats, .MenuDesserts{
       width: 30%;
-  }
-  
+      padding: 0;
+  } 
 }

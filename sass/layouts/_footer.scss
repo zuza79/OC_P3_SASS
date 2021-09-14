@@ -1,9 +1,8 @@
-/*----------Footer-----------------*/
+/*----------Footer----------*/
 footer {
-    color: white;
+    color:$color-white;
     background-color : $background-color-gray-dark;
     padding : 20px;
-   
 }
 .FooterItem {
     display: flex; 
@@ -14,12 +13,11 @@ footer {
 .pFooter {
     letter-spacing: normal;
     font-weight: 100;
-    color : white;
+    color:$color-white;
 }
 .fa-utensils, .fa-hands-helping{
-    color: white;
+    color:$color-white;
 }
-
 /*--tablet--*/
 @media screen and (min-width: map-get($tablet,tablet))
 {
@@ -27,7 +25,6 @@ footer {
       text-align: center;
       font-size: 22px;
       letter-spacing: 2px;  
-      
     }
     .FooterBloc{
         display: flex;
@@ -37,7 +34,7 @@ footer {
 } 
 
 /*--desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop))
+@media screen and (min-width: map-get($desktop, desktop))
 {
     .FooterTitle{
         text-align: center;

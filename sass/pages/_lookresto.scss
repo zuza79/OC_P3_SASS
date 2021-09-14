@@ -8,7 +8,7 @@
     margin: 10px;
 }
 /*--Desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop))
+@media screen and (min-width: map-get($desktop, desktop))
 {
     .LookResto{
         padding: 10px;

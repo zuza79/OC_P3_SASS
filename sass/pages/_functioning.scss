@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     @include margin-center;
-    
 }
 .TitleFonc{
     padding-left: 20px;
@@ -44,7 +43,7 @@
     margin-left: 25px;
 }
 /*--Desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop))
+@media screen and (min-width: map-get($desktop, desktop))
 {
     .functioning{
         padding: 10px;
@@ -53,24 +52,25 @@
         width: 230px;
         padding-left: 20px;
     }
- .TitleFonc{
+    .TitleFonc{
      text-align: center;
      margin: 10px;
- }   
- .TxtFunc{
+    }   
+    .TxtFunc{
      font-size: 16px;
      width: 85%;
      margin-left: 15px;
- }
- .FuncMenu{
+    }
+    .FuncMenu{
      display: flex;
      flex-direction: row;
      justify-content: center;
-}
+    }
 }
 /*--tablet--*/
 @media screen and (min-width: map-get($tablet,tablet))
 {
     .TitleFonc{
-        text-align: center;}
+     text-align: center;
+    }
 }

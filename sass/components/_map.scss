@@ -1,4 +1,4 @@
-/*-----------map*--------------------*/
+/*-------map*-------*/
 .FormMap {
     height: 50px;
     @include flex-direction-row-center;
@@ -19,7 +19,6 @@
     width : 130px;
     padding : 10px;
     outline : none;
-    
 }
 .InSearching {
     color: $color-black;
@@ -29,9 +28,8 @@
 input {
     padding-left : 10px;
 }
-
 /*--desktop--*/
-@media screen and (min-width: map-get($breakpoints, desktop))
+@media screen and (min-width: map-get($desktop, desktop))
 {
     .FormMap{
         width: 200px;
@@ -39,8 +37,20 @@ input {
      background-color: darken($background-color-gray-light, 5%);
     border-top: solid 3px $color-border-HomePage;
     }
- .InSearching{
+    .InSearching{
      width: 200px;
- }  
-
+    }  
+}
+/*--tablet--*/
+@media screen and (min-width: map-get($tablet,tablet))
+{
+    .FormMap{
+        width: 200px;
+     @include margin-center;
+     background-color: darken($background-color-gray-light, 5%);
+    border-top: solid 3px $color-border-HomePage;
+    }
+    .InSearching{
+     width: 200px;
+    }  
 }

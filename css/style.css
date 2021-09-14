@@ -16,6 +16,7 @@ body {
 }
 
 /*----styles-----*/
+/*--shrikhand exclusive logo*/
 h1 {
   font-family: shrikhand;
   font-size: 25px;
@@ -81,7 +82,7 @@ input {
   font-weight: 900;
 }
 
-/*-----------map*--------------------*/
+/*-------map*-------*/
 .FormMap {
   height: 50px;
   display: flex;
@@ -120,6 +121,20 @@ input {
 
 /*--desktop--*/
 @media screen and (min-width: 999px) {
+  .FormMap {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5e5e5;
+    border-top: solid 3px #d6dbdf;
+  }
+
+  .InSearching {
+    width: 200px;
+  }
+}
+/*--tablet--*/
+@media screen and (min-width: 767px) {
   .FormMap {
     width: 200px;
     margin-left: auto;
@@ -205,7 +220,7 @@ input {
     padding-bottom: 10px;
   }
 }
-/*----------Footer-----------------*/
+/*----------Footer----------*/
 footer {
   color: white;
   background-color: #474f4e;
@@ -288,8 +303,7 @@ footer {
   justify-content: center;
   transition: opacity 0.6s ease-in-out;
 }
-
-.HeartNormal:hover {
+.HeartNormal :hover {
   opacity: 0;
   font-weight: 0;
   cursor: pointer;
@@ -468,14 +482,10 @@ footer {
   0% {
     opacity: 1;
   }
-  75% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.2;
+  80% {
+    opacity: 0.8;
   }
   100% {
-    opacity: 0;
     visibility: hidden;
   }
 }
@@ -494,12 +504,13 @@ footer {
 }
 
 .AnimLoading {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#9356DC, #FF79DA);
   border: 20px solid #9356DC;
   border-radius: 50%;
   border-top: 20px solid #FF79DA;
   border-bottom: 20px solid #99E2D0;
-  width: 100px;
-  height: 100px;
   margin: auto;
   margin-top: 50px;
   top: 0;
@@ -512,10 +523,10 @@ footer {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
     visibility: hidden;
   }
 }
