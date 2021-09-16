@@ -73,6 +73,7 @@
       @include flex-direction-row-center;
      @include margin-center;
      align-items: flex-start;
+     padding-bottom: 0;
      border-top: solid 3px $color-border-HomePage;
   } 
   .MenuEntrees, .MenuPlats, .MenuDesserts{
