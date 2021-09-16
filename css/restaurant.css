@@ -332,7 +332,7 @@ footer {
 
 .h4TxtImg {
   font-family: shrikhand;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   padding-left: 20px;
 }
@@ -761,18 +761,30 @@ footer {
 
 .h5Menu {
   margin-bottom: 5px;
+  text-align: left;
+}
+
+.title {
+  max-width: 345px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link {
   width: 40px;
   height: 3px;
+  text-align: left;
   background-color: #99E2D0;
   margin: 5px 0 10px 0;
 }
 
 .BlocAnim {
-  width: 345px;
+  max-width: 345px;
   height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -819,19 +831,14 @@ footer {
   padding-top: 15px;
 }
 
+.MenuEntrees, .MenuPlats, .MenuDesserts {
+  padding-left: 10px;
+}
+
 /*--tablet--*/
 @media screen and (min-width: 767px) {
   .BlocMenu {
     border-top: solid 3px #d6dbdf;
-  }
-
-  .h5Menu {
-    text-align: center;
-  }
-
-  .BlocAnim, .link {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 /*--desktop--*/
@@ -851,6 +858,7 @@ footer {
   .MenuEntrees, .MenuPlats, .MenuDesserts {
     width: 30%;
     padding: 0;
+    padding-left: 10px;
   }
 }
 /*--Check anim--*/

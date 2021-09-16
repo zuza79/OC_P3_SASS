@@ -9,16 +9,25 @@
 }
 .h5Menu{
     margin-bottom:5px;
+    text-align: left;
+}
+.title{
+    max-width: 345px;
+    padding-left: 20px;
+    @include margin-center;
 }
 .link{
     width: 40px;
     height: 3px;
+    text-align: left;
     background-color:$background-color-tertiary;
     margin: 5px 0 10px 0;
 }
 .BlocAnim{
-    width: 345px;
+    max-width: 345px;
     height: 65px;
+    @include margin-center;
+    overflow: hidden;
     @include flex-direction-row-center;
     flex-direction: column;
     justify-content: start;
@@ -55,17 +64,14 @@
 .MenuPlats, .MenuDesserts{
     padding-top: 15px;
 }
+.MenuEntrees, .MenuPlats, .MenuDesserts{
+    padding-left: 10px;
+}
 /*--tablet--*/
 @media screen and (min-width: map-get($tablet,tablet)){
     .BlocMenu{
         border-top: solid 3px $color-border-HomePage;
     } 
-    .h5Menu{
-        text-align: center
-    }
-    .BlocAnim, .link{
-        @include margin-center;
-    }    
 }
 /*--desktop--*/
 @media screen and (min-width: map-get($tabdesk, tabdesk)){
@@ -79,5 +85,6 @@
   .MenuEntrees, .MenuPlats, .MenuDesserts{
       width: 30%;
       padding: 0;
+      padding-left: 10px;
   } 
 }
