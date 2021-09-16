@@ -29,7 +29,7 @@ footer {
     .FooterBloc{
         display: flex;
         flex-direction: row;
-        gap: 50px;
+        justify-content: space-between;
     }
 } 
 

@@ -122,7 +122,7 @@ input {
 /*--desktop--*/
 @media screen and (min-width: 999px) {
   .FormMap {
-    width: 200px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: #e5e5e5;
@@ -136,7 +136,7 @@ input {
 /*--tablet--*/
 @media screen and (min-width: 767px) {
   .FormMap {
-    width: 200px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: #e5e5e5;
@@ -255,7 +255,7 @@ footer {
   .FooterBloc {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-between;
   }
 }
 /*--desktop--*/
