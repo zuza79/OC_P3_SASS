@@ -4,8 +4,10 @@
   "description": "premier projet sass",
   "main": "index.scss",
   "scripts":{
-    "sass": "sass --watch ./sass/index.scss:./css/style.css ./sass/*:./sass/index.scss ./sass/restaurant.scss:./css/restaurant.css --style expanded"
+    "sass": "sass --watch ./sass/index.scss:./css/style.css ./sass/restaurant.scss:./css/restaurant.css",
+    "prefix": "postcss --watch ./css/style.css ./css/restaurant.css --use autoprefixer -d ./css/prefixed/" 
   },
+  
   
   "repository": {
     "type": "git",

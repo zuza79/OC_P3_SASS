@@ -6,6 +6,14 @@
     display: flex;
     justify-content: center;
     @include margin-center;
+    & .fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover{
+    cursor: pointer;
+    color: $background-color-primary;
+    }
+    & .select:hover{
+        width: 305px;
+        height: 80px;
+    }
 }
 .TitleFonc{
     padding-left: 20px;
@@ -19,11 +27,9 @@
     border-radius: 20px;
     padding-left: 30px;
     @include box-shadow-gray; 
+    
 }
-.fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover{
-    cursor: pointer;
-    color: $background-color-primary;
-}
+
 .number{
     width: 30px;
     height: 30px;

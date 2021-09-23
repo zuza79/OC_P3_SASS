@@ -305,7 +305,6 @@ footer {
 }
 .HeartNormal :hover {
   opacity: 0;
-  font-weight: 0;
   cursor: pointer;
 }
 
@@ -369,6 +368,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+.SelectMenu .fa-mobile-alt:hover, .SelectMenu .fa-list-ul:hover, .SelectMenu .fa-store:hover {
+  cursor: pointer;
+  color: #9356DC;
+}
+.SelectMenu .select:hover {
+  width: 305px;
+  height: 80px;
+}
 
 .TitleFonc {
   padding-left: 20px;
@@ -386,11 +393,6 @@ footer {
   border-radius: 20px;
   padding-left: 30px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-}
-
-.fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover {
-  cursor: pointer;
-  color: #9356DC;
 }
 
 .number {
